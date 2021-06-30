@@ -806,14 +806,20 @@ footer > p > a
    
  }
 
- #side-div > div:nth-child(2) > a{
+ #side-div > div:nth-child(2) > div > a{
     color: var(--secondary-text-color);
  }
 
  
+.hamMenu
+{
+    color: white;
+}
 
-
- 
+ .hamDiv
+ {
+     grid-template-columns: 200px 60px;
+ }
 
  /*****************ABOUT US********************/
  #aboutUs
@@ -981,11 +987,15 @@ footer > p > a
 
 
 
+
 /*************************MEDIA QUERIES************************/
 
 /* Large devices (desktops, less than 1200px)*/
 @media (max-width: 1199.98px) 
 {
+
+ 
+
     header
     {
         position: static;
@@ -1722,9 +1732,13 @@ footer > p > a
 
 
 
+
+
 /*Small devices (landscape phones, less than 768px)*/
 @media (max-width: 767.98px) 
 {
+
+    
     .grid-col-2,.grid-col-3,.grid-col-4,.grid-sec-7 /*.grid-classes, .grid-classes-sec*/
     {
         display: grid;
@@ -2189,6 +2203,8 @@ section:nth-child(7) > div > div > img
 /***Extra small devices (portrait phones, less than 576px)***/
 @media (max-width: 575.98px) 
 {
+  
+
 .grid-col-2,.grid-col-3,.grid-col-4,.grid-col-5,.grid-sec-7, .grid-classes, .grid-classes-sec
 {
     display: grid;
@@ -2783,5 +2799,31 @@ section:nth-child(6) > div:nth-child(8)
 
 } 
 
+@media (min-width: 1200.98px) 
+{
+    .hamMenu{
+        display: none;
+    }
+
+    .hamDiv
+    {
+        grid-template-columns: 1fr;
+    }
+}
+
+
+
+
+@media (min-width: 768.98px) 
+{
+    .hamMenu{
+        display: none;
+    }
+
+    .hamDiv
+    {
+        grid-template-columns: 1fr;
+    }
+}
 
 
