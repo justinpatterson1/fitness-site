@@ -1,15 +1,23 @@
 const hamMenu = document.querySelector(".hamMenu");
-const navDiv = document.querySelector("#nav-bar")
+const navDiv = document.querySelector("#nav-bar");
+const secondNav = document.querySelector("#second-nav")
  let open = false;
+
+
+
+
 hamMenu.addEventListener("click",()=>{
     if(open === false)
     {
-        navDiv.style.display = "block";
+       // navDiv.style.display = "block";
+        secondNav.classList.remove("hide");
         open = true;
     }
     else{
-        navDiv.style.display = "none";
+        secondNav.classList.add("hide");
         open = false;
     }
+
+    
     
 })

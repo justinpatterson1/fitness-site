@@ -38,6 +38,10 @@ i
    
 }
 
+.hide{
+    display: none;
+}
+
 .grid
 {
     display: grid;
@@ -1762,7 +1766,13 @@ footer > p > a
 {
     display: none;
 }
-header > nav > ul:nth-child(1) > li
+
+#hamburger-nav >  ul:nth-child(1) > li:nth-child(1)
+{
+    margin-top: 10px;
+}
+header > nav > ul:nth-child(1) > li,
+#hamburger-nav >  ul:nth-child(1) > li
 {
    display: block;
    text-align: center;
@@ -1773,7 +1783,8 @@ header > nav > ul:nth-child(1) > li
    z-index: 0;
 }
 
-header > nav > ul:nth-child(2) 
+header > nav > ul:nth-child(2),
+#hamburger-nav >  ul:nth-child(2)
 {
   justify-self: center;
   padding-left: 0px;
@@ -1798,7 +1809,7 @@ header > nav > ul:nth-child(2)
     padding-right: 300px;
     padding-left: 100px;
     text-align: left;
-    
+    height: 50vh;
     
 }
 
@@ -1823,6 +1834,7 @@ color: white;
 padding: 10px;
 
 
+
 }
 /**************SIDE DIV***************/
 #side-div
@@ -1833,6 +1845,7 @@ padding: 10px;
     position: absolute;
     height: 0px;
     width: 100%;
+    margin-bottom: 20px;
     
     
 }
@@ -2227,22 +2240,25 @@ section:nth-child(7) > div > div > img
   height: 60vh;
   background-attachment: local;
   margin-bottom: 40px;
+  padding-top: 20px;
+  
   
 }
 
 #hero-section > div 
 {
     
-    padding:0;
     padding-top: 50px;
     text-align: left;
+    
+
+    
     
 }
 
 #hero-section > div > h6
 {
-    font-size: .75rem;
-    
+    font-size: 1rem;
 }
 
 #hero-section > div > h1
@@ -2832,6 +2848,10 @@ section:nth-child(6) > div:nth-child(8)
     .hamDiv
     {
         grid-template-columns: 1fr;
+    }
+    .nav-bar
+    {
+        display: inline;
     }
 }
 
